@@ -1,3 +1,67 @@
-<section class="home-page-cont">
-    <img src="../../assets/banner.png">
+<!-- Angular Basics -->
+
+<!-- Directives Practice -->
+<section class="home-page-content text-center mt-4">
+  <h2>Directives</h2>
+  <div class="container">
+    <div class="row">
+      <!-- NgClass Directive -->
+      <div class="col-md-4 col-sm-4 col-12 pe-2 ng-directives-list">
+        <div class="ng-class-directive">
+          <div class="highlight-section mt-5">
+            <h3
+              [ngClass]="{
+                red: heightlightColor === 'red',
+                green: heightlightColor === 'green',
+                blue: heightlightColor === 'blue'
+              }"
+            >
+              Changes With Respect to Ngclass
+            </h3>
+          </div>
+          <div class="col-md-12 col-sm-12 col-12">
+            <button class="btn-btn-danger" (click)="heightlight('red')">
+              Red
+            </button>
+            <button class="btn-btn-success" (click)="heightlight('green')">
+              Green
+            </button>
+            <button class="btn-btn-primary" (click)="heightlight('blue')">
+              Blue
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- NgClass Directive -->
+      <!-- NgStyle Directive -->
+      <div class="col-md-4 col-sm-4 col-12 pe-2 ng-directives-list">
+        <div class="highlight-section mt-5">
+          <h3
+            [ngStyle]="{
+              color: isStyleApplied === true ? 'white' : 'black',
+              backgroundColor: isStyleApplied === true ? 'green' : 'white'
+            }"
+          >
+            Changes With Respect to NgStyle
+          </h3>
+        </div>
+        <div class="col-md-12 col-sm-12 col-12">
+          <button type="button" class="btn btn-info" (click)="toggleStyle()">
+            NgStyle
+          </button>
+        </div>
+      </div>
+      <!-- NgStyle Directive -->
+      <!-- NgModel Directive -->
+      <div class="col-md-4 col-sm-4 col-12 pe-2 ng-directives-list">
+        <div class="highlight-section mt-5">
+          <h3>NgModel - Two Way Binding</h3>
+        </div>
+        <input class="mt-4" type="text" [(ngModel)]="name" />
+        <p class="ngmodel-name">{{ name }}</p>
+      </div>
+      <!-- NgModel Directive -->
+    </div>
+  </div>
 </section>
+<!-- Angular Basics -->

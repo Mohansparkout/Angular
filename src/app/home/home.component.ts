@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: "app-home",
+  templateUrl: "./home.component.html",
+  styleUrls: ["./home.component.css"],
 })
-export class HomeComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+export class HomeComponent {
+  heightlightColor = "black";
+  isStyleApplied = false;
+  name:string="Angular";
+  heightlight(color: string) {
+    this.heightlightColor = color;
   }
-
+  toggleStyle() {
+    this.isStyleApplied = !this.isStyleApplied;
+  }
 }

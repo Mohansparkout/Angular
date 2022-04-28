@@ -1,6 +1,59 @@
-.home-page-cont img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    object-position: center;
+/* Ngclass Directive  */
+.red {
+    color: red;
+}
+.green {
+    color: green;
+}
+.blue {
+    color: blue;
+}
+.btn-btn-danger {
+    border: unset;
+    background: red;
+    outline: 0;
+    margin: 15px;
+    color: #ffffff;
+    padding: 12px;
+}
+.btn-btn-success {
+    border: unset;
+    background: green;
+    outline: 0;
+    margin: 15px;
+    color: #ffffff;
+    padding: 12px;
+}
+.btn-btn-primary {
+    border: unset;
+    background: blue;
+    outline: 0;
+    margin: 15px;
+    color: #ffffff;
+    padding: 12px;
+}
+
+/* Ngstyle Directive  */
+
+.btn-info {
+    border: unset;
+    background: black;
+    outline: 0;
+    margin: 15px;
+    color: #ffffff;
+    padding: 12px;
+}
+
+.btn-info:active:focus {
+    box-shadow: unset;
+    outline: 0;
+}
+
+.btn-info:focus {
+    box-shadow: unset;
+}
+
+.highlight-section h3 {
+    font-size: 20px;
+    font-weight: 600;
 }
